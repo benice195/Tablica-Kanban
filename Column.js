@@ -3,7 +3,7 @@ function Column(id, name) {
     this.id = id;
     this.name = name || 'Nie podano nazwy';
 	this.element = createColumn();
-    };
+    
 
 	function createColumn() {
 		// TWORZENIE NOWYCH WĘZŁÓW
@@ -42,6 +42,7 @@ function Column(id, name) {
             return column;
         
 	};
+};
 Column.prototype = {
 	createCard: function(card) {
         this.element.children('ul').append(card.element);
