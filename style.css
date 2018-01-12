@@ -33,9 +33,10 @@ body {
 }
 .column-container {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
-    width: 1200px;
+    flex-direction: row;
+    width: 100%;
     margin: 0 auto;
 }
 .add-card, .create-column {
@@ -78,7 +79,8 @@ body {
 }     
 /* COLUMN */
 .column {
-    width: 30%;
+    
+    min-width: 400px;
     display: inline-block;
     margin: 8px;
     min-height: 400px;
